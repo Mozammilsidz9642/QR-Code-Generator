@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> QR Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!--  QR STYLING LIB -->
+<script src="https://cdn.jsdelivr.net/npm/qr-code-styling/lib/qr-code-styling.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+  <h2> QR Generator</h2>
+
+  <input type="text" id="qrInput" placeholder="Enter Link">
+
+  <input type="text" id="userInput" placeholder="Username">
+
+  <input type="file" id="logoInput" accept="image/*">
+
+  <!-- CARD -->
+  <div class="card">
+    <div id="qr-box"></div>
+    <h2 id="usernameDisplay">@username</h2>
+  </div>
+
+  <div class="buttons">
+    <button onclick="generateQR()">Generate</button>
+    <button onclick="downloadQR()">Download</button>
+    <button onclick="clearQR()">Clear</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

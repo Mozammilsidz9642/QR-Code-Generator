@@ -1,0 +1,89 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background: linear-gradient(135deg,#667eea,#764ba2);
+}
+
+/* GLASS CONTAINER */
+.container{
+  width:320px;
+  padding:20px;
+  border-radius:20px;
+
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border:1px solid rgba(255,255,255,0.2);
+
+  text-align:center;
+  color:white;
+}
+
+input{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border:none;
+  border-radius:8px;
+}
+
+/* CARD */
+.card{
+  margin-top:15px;
+  padding:15px;
+  background:white;
+  border-radius:20px;
+}
+
+/* QR BOX */
+#qr-box{
+  display:flex;
+  justify-content:center;
+}
+
+/* USERNAME */
+#usernameDisplay{
+  margin-top:8px;
+  font-size:18px;
+  color:#333;
+  font-weight:600;
+}
+
+/* BUTTONS */
+.buttons{
+  display:flex;
+  gap:8px;
+  margin-top:10px;
+}
+
+button{
+  flex:1;
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  background:#000;
+  color:#fff;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#333;
+}
+@media(max-width:400px){
+  .container{
+    width:95%;
+  }
+
+  canvas{
+    width:100% !important;
+  }
+}
